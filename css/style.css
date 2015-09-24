@@ -17,13 +17,38 @@
 /***** GENERIC STYLES *************/
 /**********************************/
 
+body{
+	background-color: #ccc;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	max-width: 600px;
+
+}
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
 
 
+    background-color: black;
+}
 
-
-
-
-
+.push {
+    position: relative;
+}
 /***** SPECIFIC STYLES ************/
 /**********************************/
+
+li{
+list-style: none;
+}
+.panel a{
+	color: white;
+}
+.menu_logo{
+  width: 30px;
+  height:50px;
+}
 
