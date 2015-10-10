@@ -14,41 +14,579 @@
   zoom: 1; /* ie 6/7 */
 }
 
+
+
+
+/* font styling 
+
+
+SANS SERIF 
+font-family: 'Raleway', sans-serif;
+
+
+SERIF
+font-family: 'Marcellus SC', serif;
+*/ 
+
+
+/* Blue for top bar and side menu background
+#005EA5
+
 /***** GENERIC STYLES *************/
 /**********************************/
 
-body{
-	background-color: #ccc;
+body { 
+  background: url(../img/columbia.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.wrapper{
-	width: 80%;
-	margin: 0 auto;
-	max-width: 600px;
+body{
 
+  line-height: 1.5;
+
+  
+}
+li{
+list-style: none;
+}
+
+
+/* pop out menu styling */
+.push{
+  position: relative;
 }
 .panel {
     position: fixed;
     left: -15.625em; /*left or right and the width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
-
-
-    background-color: black;
-}
-
-.push {
-    position: relative;
-}
-/***** SPECIFIC STYLES ************/
-/**********************************/
-
-li{
-list-style: none;
+    background-color: #005EA5;
+    max-width: 320px;
 }
 .panel a{
-	color: white;
+  color: white;
+  text-decoration: none;
 }
 .menu_logo{
-  width: 30px;
-  height:50px;
+  width: 100px;
+  height: 70px;
+  padding-left: 30%;
+  padding-right: 40%;
+  padding-top: 20px;
+
 }
+.menu_text{
+  
+  margin-bottom: 10%;
+  padding-left: 0;
+
+}
+.menu_text li{
+  margin-bottom: 1px;
+  padding:10px;
+  display: block;
+  border-bottom: 1pt solid #fff;
+ 
+} 
+.menu_text{
+  text-align: center;
+  
+}
+.contact_info{
+  font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
+
+}
+.contact_info p{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+
+}
+.contact_info h2{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+
+}
+
+/* site header styling */ 
+.site_header{
+  z-index: 100;
+  background-color: #005EA5;
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.menu-link{
+  color: white;
+  padding:22px;
+  text-decoration: none;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 200;
+}
+
+.login-link{
+  color: white;
+  padding: 22px;
+  text-decoration: none;
+  display: block;
+  float: right;
+  position: relative;
+  z-index: 200;
+}
+
+.bar_logo{
+  width: 100px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7px;
+  z-index: 100;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.bar_logo img{
+  width: 70%;
+  margin: 0;
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Site content styling */ 
+.wrapper{
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1024px;
+  margin-bottom: 40px;
+
+}
+
+
+/* featured attorney styling  */ 
+.profile_pic{
+ width: 100%;
+ 
+}
+
+.about_profile h2{
+
+  color: #005EA5;
+  border-bottom: 1pt solid black;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 9px;
+  margin-bottom: 0;
+
+}
+.about_profile h3{
+
+
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0;
+
+}
+
+
+
+.read_more_button {
+  -moz-box-shadow: 0px 10px 14px -7px #91b8b3;
+  -webkit-box-shadow: 0px 10px 14px -7px #91b8b3;
+  box-shadow: 0px 10px 14px -7px #91b8b3;
+  background-color:#004da5;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  border:1px solid #566963;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #000000;
+  margin-bottom: 10px;
+}
+.read_more_button:hover {
+  background-color:#6c7c7c;
+}
+.read_more_button:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+/* Styling for the about company text.*/ 
+
+.about_company_bar{
+background-color: #005EA5;
+padding-left: 10px;
+width: 90%;
+margin:0 auto;
+
+}
+
+
+.about_company_bar p{
+color: white;  
+padding: 10px;
+
+font-family: 'Marcellus SC', serif;
+font-size: 14px;
+
+
+}
+
+/* Pratice Areas Styling */ 
+
+.practice_areas{
+  font-family: 'Raleway', sans-serif;
+  vertical-align: top;
+}
+
+
+.practice_areas ul{
+  margin-left: 0;
+  padding-left: 0;
+  color: #005EA5;
+
+}
+
+
+.practice_areas h2{
+  padding: 0;
+  margin: 0;
+}
+.practice_areas a{
+    color: #005EA5;
+}
+
+/* News Feed Styling */   
+
+.news_feed{
+  font-family: 'Raleway', sans-serif;
+
+  
+
+}
+
+.news_feed p{
+
+  font-size: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.news_feed h2{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Styling for attorneys page */ 
+.profile img{
+  width: 100%;
+
+}
+.personal_info{
+  margin: 0;
+  padding: 0;
+
+}
+.personal_info a{
+  color: #005EA5;
+}
+
+.personal_bio{
+  background-color: #005EA5;
+  padding: 12px;
+  margin-top: 15px;
+}
+.personal_bio p{
+  font-size: 12px;
+  color: white;
+}
+
+.personal_bio h4{
+  color: white;
+  
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1pt solid white;
+}
+
+
+#jr{
+  color: black;
+  font-size: 12px;
+}
+
+.practices{
+  margin: 0;
+  padding: 0;
+}
+.practices a{
+  color: #005EA5;
+}
+
+
+.reported_cases ul{
+  margin: 0;
+  padding: 0;
+
+}
+.reported_cases a {
+  color: #005EA5;
+}
+
+
+/* stlying for service page */ 
+
+
+.appellate_page{
+  
+  background-image: linear-gradient(#005EA5, #ccc)
+  
+}
+
+.appellate_page h1,h3{
+  padding: 5px;
+  padding-left: 15px;
+  color: white;
+  padding-bottom: 20px;
+} 
+
+
+.appellate_page h1{
+  border-bottom: 1pt solid white;
+
+}
+
+.related_cases p{
+  background-color: #ccc;
+  padding: 10px;
+
+} 
+
+.appellate_attorneys ul{
+  padding: 0;
+  margin:0;
+}
+
+
+
+/* Styling for full site Viewing */ 
+
+
+@media screen and (min-width: 800px){
+
+
+
+/* generic styling */ 
+h4{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+p{
+  font-size: 12px;
+}
+a{
+  font-size: 12px;
+}
+.wrapper{
+width: 80%;
+padding-bottom: 40px;
+
+
+}
+
+
+
+
+/* Styling for full view Home page */ 
+.profile_pic{
+  width: 50%;
+  display: inline-block;
+  padding-top: 30px;
+  padding-left: 4.5%;
+ 
+}
+
+.about_profile {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 10%;
+  
+  
+}
+
+.practice_areas{
+  display: inline-block;
+  width: 40%;
+  padding-left: 4.5%;
+}
+
+.news_feed{
+  float: right;
+  width: 40%;
+}
+
+.news_feed p{
+  margin-right: 10%;
+
+}
+/* Styling for full view Attorney Page */ 
+
+
+
+
+img{
+ width: 100%;
+  
+}
+.profile{
+  float: left;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-bottom: 5%;
+}
+
+.profile h1{
+  margin-top: 0;
+  border-bottom: 1pt solid #ccc;
+}
+
+.personal_practice_areas{
+  background-color: #ccc;
+  vertical-align: top;
+  float: right;
+  margin-right: 0%;
+  margin-top: 5px;
+ 
+  
+
+}
+.personal_practice_areas ul{
+  padding-bottom: 15px;
+  padding-top: 0;
+  padding-left: 0;
+}
+.personal_practice_areas a {
+  font-size: 12px;
+  padding: 10px;
+
+
+}
+
+.personal_practice_areas h3{
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.personal_bio{
+  width: 47%;
+  padding-top: 10px;
+  float: left;
+  margin: 0;
+  clear: both;
+  
+
+}
+
+.reported_cases{
+  width: 45%;
+  float: right;
+  top: 0;
+  vertical-align: top;
+
+}
+
+.reported_cases h3{
+  margin-top: 0;
+}
+
+
+
+/* Service Page Styling */ 
+
+
+.related_cases{
+  width: 50%;
+  float: right;
+
+}
+.related_cases h2{
+  margin-top: 0;
+}
+.appellate_attorneys{
+  clear: both;
+}
+.appellate_attorneys a{
+  float: left;
+}
+
+
+
+
+
+
+.names{
+  clear: both;
+  padding-top: 10px;
+  display: inline-block;
+  background-color: #005EA5;
+  padding: 10px;
+  color: white;
+}
+
+.names h1{
+  margin:0;
+  color: white;
+}
+
+
+
+
+
+}
+
+/* End of Home_Page
+
+*/ 
+
+
+
+/* Start of profile page 
+
+
+*/ 
+
 
